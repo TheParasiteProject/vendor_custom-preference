@@ -30,8 +30,6 @@ import android.os.UserHandle;
 import android.util.AttributeSet;
 import android.util.Log;
 
-import androidx.preference.SwitchPreference;
-
 import java.lang.SecurityException;
 import java.util.List;
 
