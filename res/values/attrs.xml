@@ -27,4 +27,9 @@
         <attr name="replacesKey" format="string" />
         <attr name="minSummaryLines" format="integer" />
     </declare-styleable>
+
+    <!-- Base attributes available to OverlaySwitchPreference. -->
+    <declare-styleable name="OverlaySwitchPreference">
+        <attr name="dkey" format="string" />
+    </declare-styleable>
 </resources>
