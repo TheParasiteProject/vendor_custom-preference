@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package net.margaritov.preference.colorpicker;
+package com.android.settings.custom.colorpicker;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -30,7 +30,7 @@ import android.view.KeyEvent;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
-import com.android.settings.R;
+import com.android.settings.custom.R;
 
 public class ColorPickerDialog extends AlertDialog implements ColorPickerView.OnColorChangedListener, View.OnClickListener, View.OnKeyListener {
 
