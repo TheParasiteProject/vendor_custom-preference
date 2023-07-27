@@ -31,6 +31,7 @@
     <!-- Base attributes available to OverlaySwitchPreference. -->
     <declare-styleable name="OverlaySwitchPreference">
         <attr name="dkey" format="string" />
+        <attr name="dkeyNightOnly" format="boolean" />
     </declare-styleable>
 
     <!-- Value to pass to callback when restore button is pressed -->
