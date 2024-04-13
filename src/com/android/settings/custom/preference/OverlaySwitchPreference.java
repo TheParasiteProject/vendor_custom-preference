@@ -40,24 +40,22 @@ public class OverlaySwitchPreference extends SwitchPreference {
     private static final String DKEY = "dkey";
     private static final String DKEY_NIGHT_ONLY = "dkeyNightOnly";
 
-
     private final String mDisableKey;
     private final boolean mDKeyNightOnly;
     private final OverlayManager mOverlayManager;
 
-    public OverlaySwitchPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
+    public OverlaySwitchPreference(Context context, AttributeSet attrs, int defStyle) {
+        super(context, attrs, defStyle);
         mDisableKey = attrs.getAttributeValue(SETTINGSNS, DKEY);
         mDKeyNightOnly = attrs.getAttributeBooleanValue(SETTINGSNS, DKEY_NIGHT_ONLY, false);
         mOverlayManager = context.getSystemService(OverlayManager.class);
     }
 
-    public OverlaySwitchPreference(Context context, AttributeSet attrs, int defStyleAttr) {
-        this(context, attrs, defStyleAttr, 0);
-    }
-
     public OverlaySwitchPreference(Context context, AttributeSet attrs) {
-        this(context, attrs, com.android.internal.R.attr.switchPreferenceStyle);
+        super(context, attrs);
+        mDisableKey = attrs.getAttributeValue(SETTINGSNS, DKEY);
+        mDKeyNightOnly = attrs.getAttributeBooleanValue(SETTINGSNS, DKEY_NIGHT_ONLY, false);
+        mOverlayManager = context.getSystemService(OverlayManager.class);
     }
 
     public OverlaySwitchPreference(Context context) {
